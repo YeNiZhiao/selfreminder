@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: scale(0) translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.show {
+    transform: scale(1) translateX(-50%) translateY(-50%);
+    opacity: 1;
+}

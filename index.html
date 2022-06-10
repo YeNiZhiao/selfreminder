@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Self Reminder</title>
+</head>
+
+<body class="bg-primary">
+    <div class="w-11/12 mx-auto md:w-9/12">
+        <div class="fixed form  w-9/12 md:w-5/12  ">
+            <form action="" name="pesan"
+                class="z-20 rounded-lg font-comfortaa p-4 w-full text-center shadow-md bg-komponen">
+                <input type="text"
+                    class="p-2 outline-0 w-full my-2 rounded-md focus:shadow-lg active:shadow-lg hover:shadow-lg"
+                    name="nama" placeholder="Nama Kamu">
+                <input type="hidden" name="waktu" class="waktu">
+                <textarea
+                    class="w-full my-2 rounded-md p-2 outline-0 shadow-md hover:shadow-lg active:shadow-lg focus:shadow-lg"
+                    name="pesan" id="" cols="30" rows="10" placeholder="Kalimatmu"></textarea>
+                <button type="submit"
+                    class="my-2 p-2 bg-secondary w-4/12 mx-auto text-center kirim rounded-md hover:shadow-lg hover:bg-primary">Kirim</button>
+                <div
+                    class="close w-10 h-10 p-2 rounded-full absolute bg-secondary cursor-pointer hover:shadow-xl transition-all duration-100 -top-4 -right-4">
+                    X
+                </div>
+            </form>
+        </div>
+        <h1 class="my-5 font-semibold font-patrick mx-3 text-4xl text-center text-text">Simple <span
+                class="text-komponen">Self Reminder</span> Web App
+        </h1>
+        <button
+            class="tambah my-5 bg-komponen rounded-md font-comfortaa p-2 text-primary hover:bg-secondary hover:text-komponen duration-100 transition-all"><i
+                class="fas fa-plus"></i> Tambah</button>
+        <h2
+            class=" w-11/12 text-md alert rounded-lg text-primary hidden font-comfortaa p-2 justify-between mx-auto md:w-5/12 bg-komponen">
+            <span class="flex-start"> Berhasil dikirim dan terima kasih</span>
+            <span class="tutup flex-end cursor-pointer">X</span>
+        </h2>
+        <div class="w-full my-2 utama flex flex-wrap justify-evenly">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
